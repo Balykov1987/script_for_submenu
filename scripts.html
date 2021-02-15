@@ -1,0 +1,31 @@
+<div class="block-1">
+    <a class="current"></a>
+    <ul class="sub-term-menu">
+        <li>Lorem</li>
+    </ul>
+</div>
+<div class="block-2">
+    <div  class=""></a>
+    <ul class="submenu">
+        <li>Lorem</li>
+    </ul>
+</div>
+<div class="block-3">
+    <a href="#" class=""></a>
+    <ul class="submenu">
+        <li>Lorem</li>
+    </ul>
+</div>
+
+
+<script>
+    var wrapperList = document.querySelectorAll(".block");
+
+wrapperList.forEach(function(item){
+ if(item.querySelector(".current")){
+   item.querySelector(".sub-term-menu").classList.add("sub");
+   
+   item.querySelector(".sub-term-menu").classList.remove("sub-term-menu");
+ }
+});
+</script>
